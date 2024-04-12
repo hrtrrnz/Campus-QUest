@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layoutbottom.css">
+
+    <!-- FONT STUFF -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <title>Campus Quest</title>
+</head>
+<body>
+    
+    <!--CONTAINER FOR ALL IMAGES(RESPONSIVE)-->
+    <div class="map-container">
+
+        <img id="gender-image" src="" alt="Gender Image" class="gender-image">
+
+        <button class ="button" onclick="window.location.href='layouttop.html'">Go to Layout Top</button>
+        <button class ="home" onclick="window.location.href='opening.html'">Home</button>
+
+        <!--MAP-->
+        <img src="images/bottomlayout.png" alt="map" class="map-image">
+
+        <!--CTE BUILDING-->
+        <img src="images/buildingcte.png" alt="CTE" class="bCTE">
+        <img src="images/CTE.png" alt="infoCTE" class="iCTE">
+
+        <!--CHMT BUILDING-->
+        <img src="images/buildingchmt.png" alt="CHMT" class="bCHMT">
+        <img src="images/CHMT.png" alt="infoCHMT" class="iCHMT">
+
+        <!--CBAA BUILDING-->
+        <img src="images/buildingcbaa.png" alt="CBAA" class="bCBAA">
+        <img src="images/CBAA.png" alt="infoCBAA" class="iCBAA">
+
+        <!--HOSTEL BUILDING-->
+        <img src="images/hostel.png" alt="hostel" class="hostel">
+
+        <!--CANTEEN BUILDING-->
+        <img src="images/canteen.png" alt="canteen" class="canteen">
+ 
+        <!--CLINIC BUILDING-->
+        <img src="images/clinic.png" alt="clinic" class="clinic">
+ 5      
+        <!--LIBRARY BUILDING-->
+        <img src="images/library.png" alt="library" class="library">
+ 
+        <!--PARKING LOT-->
+        <img src="images/parkinglot.png" alt="parkinglot" class="parkinglot">
+ 
+        <!--RESEARCH BUILDING-->
+        <img src="images/research.png" alt="research" class="research">
+ 
+        <!--ALUMNI BUILDING-->
+        <img src="images/alumni.png" alt="alumni" class="alumni">
+ 
+        <!--DOST BUILDING-->
+        <img src="images/dost.png" alt="dost" class="dost">
+ 
+        <!--ICTS BUILDING-->
+        <img src="images/icts.png" alt="icts" class="icts">
+ 
+        <!--INDOOR BADMINTON-->
+        <img src="images/badminton.png" alt="badminton" class="badminton">
+ 
+        <!--AMPHITHEATER-->
+        <img src="images/amphi.png" alt="amphi" class="amphi">
+
+        <!--TILTING BUTTON-->
+        <button class="prompt">Please tilt your screen for better experience...</button>
+   
+        <script>
+            //GET FROM LOCAL STORAGE
+            var genderChoice = localStorage.getItem('gender');
+    
+            //SET IMAGE BASED ON CHOICE
+            var imageSrc = "";
+            if (genderChoice === 'girl') {
+                imageSrc = "images/girl-removebg-preview.png";
+            } else if (genderChoice === 'boy') {
+                imageSrc = "images/boy-removebg-preview.png";
+            }
+    
+            //SET THE IMAGe
+            document.getElementById('gender-image').src = imageSrc;
+        </script>
+    </div>
+
+</body>
+</html>
