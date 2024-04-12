@@ -1,0 +1,301 @@
+body {
+    background-color: #4C2424;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.map-container{
+    width:100%;
+    max-width: 7200px;
+    margin:0 auto;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gender-image{
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 22%;
+    height: auto;
+}
+
+.map-image{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    font-family: "Pixelify Sans", sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #2B5F10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home {
+    font-family: "Pixelify Sans", sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 10%;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #2B5F10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover, .home:hover {
+    background-color: #C7841B;
+    box-shadow: 0 0 25px white;
+}
+/*BOTTOM*/
+
+/*CTE*/
+.bCTE {
+    position: absolute;
+    top: 79%;
+    left: 18%;
+    bottom: 10%;
+    width: 12%;
+    height:auto;
+}
+
+.iCTE{
+    position: absolute;
+    top: 61%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCTE:hover{
+    transform: scale(1.2);
+}
+
+.bCTE:hover + .iCTE{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*CHMT*/
+.bCHMT {
+    position: absolute;
+    top: 23%;
+    left: 69%;
+    bottom: 10%;
+    width: 12%;
+    height:auto;
+}
+
+.iCHMT{
+    position: absolute;
+    top: 61%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCHMT:hover:hover{
+    transform: scale(1.2);
+}
+
+.bCHMT:hover + .iCHMT {
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+
+/*CBAA*/
+.bCBAA {
+    position: absolute;
+    top: 3%;
+    left: 65%;
+    bottom: 10%;
+    width: 10%;
+    height:auto;
+}
+
+.iCBAA{
+    position: absolute;
+    top: 61%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCBAA:hover{
+    transform: scale(1.2);
+}
+
+
+.bCBAA:hover + .iCBAA {
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+.prompt{
+    display: none;
+}
+
+/*HOSTEL*/
+.hostel {
+    position: absolute;
+    top: 53%;
+    left: 17%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+/*CANTEEN*/
+.canteen {
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+/*CLINIC*/
+.clinic {
+    position: absolute;
+    top: 21%;
+    left: 3%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*LIBRARY*/
+.library {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*PARKING LOT*/
+.parkinglot {
+    position: absolute;
+    top: 1%;
+    left: 17%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+/*RESEARCH BUILDING*/
+.research {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+/*ALUMNI BUILDING*/
+.alumni {
+    position: absolute;
+    top: 17%;
+    left: 40%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*DOST BUILDING*/
+.dost {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*ICTS BUILDING*/
+.icts {
+    position: absolute;
+    top: 24%;
+    left: 60%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*AMPHITHEATER*/
+.amphi {
+    position: absolute;
+    top: 3%;
+    left: 74%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+
+
+/*BADMINTON BUILDING*/
+.badminton {
+    position: absolute;
+    top: 30%;
+    left: 78%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+/*FOR RESPONSIVENESS*/
+@media (orientation: portrait) {
+    .prompt{
+        font-family: "Pixelify Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #000; 
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+  }
+

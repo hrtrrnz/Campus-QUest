@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layouttop.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <title>Campus Quest</title>
+</head>
+<body>
+
+    <!--CONTAINER FOR ALL IMAGES(RESPONSIVE)-->
+    <div class="map-container">
+
+        <img id="gender-image" src="" alt="Gender Image" class="gender-image">
+
+        <button class ="button" onclick="window.location.href='layoutbottom.html'">Go to Layout Bottom</button>
+        <button class ="home" onclick="window.location.href='opening.html'">Home</button>
+
+        <!--MAP-->
+        <img src="images/toplayout.png" alt="map" class="map-image">
+
+        <!--CAS BUILDING-->
+        <img src="images/buildingcas.png" alt="CAS" class="bCAS">
+        <img src="images/CAS.png" alt="infoCAS" class="iCAS">
+
+        <!--CCJE BUILDING-->
+
+        <img src="images/buildingccje.png" alt="CCJE" class="bCCJE">
+        <img src="images/CCJE.png" alt="infoCCJE" class="iCCJE">
+
+        <!--CCS BUILDING-->
+
+        <img src="images/buildingccs.png" alt="CCS" class="bCCS">
+        <img src="images/CCS.png" alt="infoCCS" class="iCCS">
+        <img src="images/buildingccsnew.png" alt="CCS" class="newbCCS">
+        <img src="images/CCS.png" alt="infoCCS" class="iCCS">
+
+        <!--COE BUILDING-->
+        <img src="images/buildingcoe.png" alt="COE" class="bCOE">
+        <img src="images/COE.png" alt="infoCOE" class="iCOE">
+
+        <!--CIT BUILDING-->
+        <img src="images/buildingcit.png" alt="CIT" class="bCIT">
+        <img src="images/CIT.png" alt="infoCIT" class="iCIT">
+        <img src="images/buildingcitnew.png" alt="CIT" class="newbCIT">
+        <img src="images/CIT.png" alt="infoCIT" class="iCIT">
+
+        <!--GYMNASIUM-->
+        <img src="images/gym.png" alt="gym" class="gym">
+
+        <!--NSTP OFFICE-->
+        <img src="images/nstp.png" alt="nstp" class="nstp">
+
+        <!--SWIMMING POOL-->
+        <img src="images/pool.png" alt="pool" class="pool">
+
+        <!--AVEC-->
+        <img src="images/avec.png" alt="avec" class="avec">
+
+        <button class="prompt">Please tilt your screen for better experience...</button>
+
+        <script>
+            //GET FROM LOCAL STORAGE
+            var genderChoice = localStorage.getItem('gender');
+    
+            //SET IMAGE BASED ON CHOICE
+            var imageSrc = "";
+            if (genderChoice === 'girl') {
+                imageSrc = "images/girl-removebg-preview.png";
+            } else if (genderChoice === 'boy') {
+                imageSrc = "images/boy-removebg-preview.png";
+            }
+    
+            //SET IMAGE
+            document.getElementById('gender-image').src = imageSrc;
+        </script>
+
+    </div>
+
+</body>
+</html>

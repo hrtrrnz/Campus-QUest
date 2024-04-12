@@ -1,0 +1,319 @@
+body {
+    background-color: #4C2424;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.map-container{
+    width:100%;
+    max-width: 13470px;
+    max-height: 7200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gender-image{
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    width: 22%;
+    height: auto;
+}
+.map-image{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    font-family: "Pixelify Sans", sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #2B5F10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home {
+    font-family: "Pixelify Sans", sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 10%;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #2B5F10;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover, .home:hover {
+    background-color: #C7841B;
+    box-shadow: 0 0 25px white;
+}
+/*TOP*/
+
+/*CAS*/
+.bCAS {
+    position: absolute;
+    top: 69%;
+    left: 49%;
+    bottom: 10%;
+    width: 12%;
+    height:auto;
+}
+
+.iCAS{
+    position: absolute;
+    top: 3%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCAS:hover{
+    transform: scale(1.2);
+}
+
+.bCAS:hover + .iCAS{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+
+
+/*CCJE*/
+.bCCJE {
+    position: absolute;
+    top: 37%;
+    left: 52%;
+    bottom: 10%;
+    width: 12%;
+    height:auto;
+}
+
+.iCCJE{
+    position: absolute;
+    top: 3%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCCJE:hover{
+    transform: scale(1.2);
+}
+
+.bCCJE:hover + .iCCJE{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+
+/*CCS*/
+.bCCS {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    bottom: 10%;
+    width: 11%;
+    height:auto;
+}
+
+.iCCS{
+    position: absolute;
+    top: 3%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCCS:hover{
+    transform: scale(1.2);
+}
+
+.bCCS:hover + .iCCS{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+/*new ccs*/
+.newbCCS {
+    position: absolute;
+    top: 63%;
+    left: 5%;
+    bottom: 10%;
+    width: 10%;
+    height:auto;
+}
+
+.newbCCS:hover{
+    transform: scale(1.2);
+}
+
+.newbCCS:hover + .iCCS{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+/*COE*/
+.bCOE {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    bottom: 10%;
+    width: 13%;
+    height:auto;
+}
+
+.iCOE{
+    position: absolute;
+    top: 3%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCOE:hover{
+    transform: scale(1.2);
+}
+
+.bCOE:hover + .iCOE{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+
+/*CIT*/
+.bCIT {
+    position: absolute;
+    top: 21%;
+    left: 16%;
+    bottom: 10%;
+    width: 14%;
+    height:auto;
+}
+
+.iCIT{
+    position: absolute;
+    top: 3%;
+    left: 66%;
+    bottom: 10%;
+    width: 32%;
+    height:auto;
+    opacity: 0;
+}
+
+.bCIT:hover{
+    transform: scale(1.2);
+}
+
+.newbCIT{
+    position: absolute;
+    top: 70%;
+    left: 14%;
+    bottom: 10%;
+    width: 14%;
+    height:auto;
+}
+
+.newbCIT:hover:hover{
+    transform: scale(1.2);
+}
+
+.bCIT:hover + .iCIT{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+.newbCIT:hover + .iCIT{
+    display: block;
+    box-shadow: 0 0 25px white;
+    opacity: 1;
+}
+
+.gym{
+    position: absolute;
+    top: 43%;
+    left: 31%;
+    bottom: 11%;
+    width: 15%;
+    height:auto;
+}
+
+.nstp{
+    position: absolute;
+    top: 24%;
+    left: 46%;
+    bottom: 11%;
+    width: 10%;
+    height:auto;
+}
+
+.pool{
+    position: absolute;
+    top: 65%;
+    left: 60.5%;
+    bottom: 11%;
+    width: 10%;
+    height:auto;
+}
+
+.avec{
+    position: absolute;
+    top: 51%;
+    left: 19.5%;
+    bottom: 11%;
+    width: 10%;
+    height:auto;
+}
+
+.prompt{
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .prompt{
+        font-family: "Pixelify Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #000; 
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+  }
+

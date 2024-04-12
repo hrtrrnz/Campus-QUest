@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT STUFF -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="intro1.css">
+    <title>Campus Quest</title>
+</head>
+
+<body>
+
+    <div class="image-container img-fluid">
+        <img id="genderImage" src="" alt="">
+        <div class="button-container">
+            <button id="yes">Yes, I'm sure!</button>
+            <button id="no">No, not really.</button>
+        </div>
+    </div>
+
+    <script>
+        //GET CHOICE FROM LOCAL STORAGE
+        var gender = localStorage.getItem('gender');
+        if (gender == 'girl') {
+            document.getElementById('genderImage').src = 'images/atits.png'; //LOAD GIRL
+        } else if (gender == 'boy') {
+            document.getElementById('genderImage').src='images/otits.png'; //LOAD BOY
+        }
+
+        //EVENT FOR YES
+        document.getElementById('yes').addEventListener('click', function() {
+            window.location.href = 'convo.html'; //GO TO CONVO.HTML
+        });
+        //EVENT FOR NO
+        document.getElementById('no').addEventListener('click', function() {
+            window.location.href = 'pickgen.html'; //GO TO PICKGEN.HTML
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+.bg {
+    display: flex;
+    background-image: url('images/pixellspu.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+}
+
+button {
+    
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
+    background-color: #351B03; 
+    color: #A7A7A7;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    
+}
+
+#start {
+    position: absolute;
+    top: 65%;
+    left: 70%; 
+    transform: translateX(-50%);
+    padding: 13px 110px;
+}
+
+#aboutus {
+    position: absolute;
+    top: 75%; 
+    left: 70%; 
+    transform: translateX(-50%);
+    padding: 13px 120px;
+}
+
+#contactus {
+    position: absolute;
+    top: 85%; 
+    left: 70%; 
+    transform: translateX(-50%);
+    padding: 13px 130px;
+}
+
+button:hover {
+    background-color: #6E1010;
+    box-shadow: 0 0 25px white;
+}
+
+
+.container {
+    width: 100%;
+}
+
+
+/*FOR RESPONSIVENESS*/
+@media screen and (max-width: 430px) {
+    #aboutus , #start, #contactus{
+        left: 50%;
+        padding: 8px 50px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #aboutus , #start, #contactus{
+        left: 50%;
+    }
+}
+
+@media screen and (max-height: 430px) {
+    #aboutus , #start, #contactus{
+        left: 50%;
+        padding: 3px 50px;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    #aboutus , #start, #contactus{
+        left: 50%;
+        padding: 3px 50px;
+    }
+
+    button{
+        font-size: 40px;
+    }
+}
